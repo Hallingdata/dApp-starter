@@ -1,9 +1,9 @@
-pragma solidity ^0.4.20;
+pragma solidity ^0.4.19;
 
 import "../node_modules/zeppelin-solidity/contracts/math/SafeMath.sol";
 import "../node_modules/zeppelin-solidity/contracts/ownership/Ownable.sol";
 
-contract Mining is Ownable {
+contract MiningToken is Ownable {
   using SafeMath for uint256;
 
   string public name = "ThsMiningToken";
