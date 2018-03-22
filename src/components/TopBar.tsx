@@ -12,24 +12,26 @@ type Props = {
 type AllProps = Props & { classes: StyleClassNames }
 
 const TopBar: SFC<AllProps> = ({ classes, title }) => (
-  <div className={classes.root}>
-    <AppBar position="static" color="default">
+    <AppBar position="absolute" className={classes.appBar}>
       <Toolbar>
-        <Typography variant="title" color="inherit">
+        <Typography variant="title" color="inherit" noWrap={true}>
           {title}
         </Typography>
       </Toolbar>
     </AppBar>
-  </div>
 )
 
 type StyleClassNames = {
   root: string
+  appBar: string
 }
 
 const styles: StyleRulesCallback = theme => ({
   root: {
     flexGrow: 1,
+  },
+  appBar: {
+    zIndex: theme.zIndex.drawer + 1,
   },
 })
 

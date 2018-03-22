@@ -1,5 +1,4 @@
 import * as React from "react"
-import TopBar from "./components/TopBar"
 import { DrizzleProvider } from "drizzle-react"
 import { Provider } from "react-redux"
 
@@ -9,8 +8,8 @@ import GustavoCoin from "./contracts/GustavoCoin.json"
 import LoadingContainer from "./containers/LoadingContainer"
 import DrizzleStatusContainer from "./containers/DrizzleStatusContainer"
 
-console.log("Gustavo: " + GustavoCoin)
 import store from "./store"
+import Layout from "./components/Layout"
 
 const options = {
   web3: {
@@ -30,15 +29,16 @@ class App extends React.Component {
       <DrizzleProvider options={options}>
         <Provider store={store}>
           <LoadingContainer>
-            <div className="App">
-              <TopBar title="Bitmine" />
-              <header className="App-header">
-                <h1 className="App-title">Mining Token</h1>
-              </header>
-              <h1>LOADED!!!! YHEA!!</h1>
-              <p className="App-intro">App</p>
-              <DrizzleStatusContainer/>
-            </div>
+            <Layout>
+              <div className="App">
+                <header className="App-header">
+                  <h1 className="App-title">Mining Token</h1>
+                </header>
+                <h1>LOADED!!!! YHEA!!</h1>
+                <p className="App-intro">App</p>
+                <DrizzleStatusContainer />
+              </div>
+            </Layout>
           </LoadingContainer>
         </Provider>
       </DrizzleProvider>
