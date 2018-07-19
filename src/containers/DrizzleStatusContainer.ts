@@ -5,7 +5,7 @@ const mapStateToProps = (state: any) => {
   console.log("state: " + JSON.stringify(state))
   return {
     drizzleStatus: state.drizzleStatus,
-    miningToken: state.contracts.MiningToken,
+    contracts: state.contracts
   }
 }
 

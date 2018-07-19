@@ -11,7 +11,7 @@ const drawerWidth = 240
 
 const Layout: SFC<AllProps> = ({ classes, children }) => (
   <div className={classes.root}>
-    <TopBar title="MiningToken" />
+    <TopBar title="GustavoCoin" />
     <Drawer
       variant="permanent"
       classes={{
@@ -50,6 +50,7 @@ const styles: StyleRulesCallback = theme => ({
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 3,
     minWidth: 0, // So the Typography noWrap works
+    paddingTop: 64,
   },
   toolbar: theme.mixins.toolbar,
 })
