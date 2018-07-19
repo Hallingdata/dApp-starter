@@ -1,9 +1,11 @@
 import * as React from "react"
-import { ListItem, ListItemIcon, ListItemText } from "material-ui/List"
-import InboxIcon from "material-ui-icons/MoveToInbox"
-import DraftsIcon from "material-ui-icons/Drafts"
-import StarIcon from "material-ui-icons/Star"
-import SendIcon from "material-ui-icons/Send"
+import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
+import {
+  Send as SendIcon,
+  Star as StarIcon,
+  Drafts as DraftsIcon,
+  Inbox as InboxIcon,
+} from "@material-ui/icons"
 
 export default (
   <div>

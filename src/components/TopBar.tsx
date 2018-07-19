@@ -1,24 +1,26 @@
 import * as React from "react"
 import { SFC } from "react"
-import { withStyles } from "material-ui/styles"
-import AppBar from "material-ui/AppBar"
-import Toolbar from "material-ui/Toolbar"
-import Typography from "material-ui/Typography"
-import { StyleRulesCallback } from "material-ui"
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  StyleRulesCallback,
+  withStyles,
+} from "@material-ui/core"
 
 type Props = {
-    title: string
+  title: string
 }
 type AllProps = Props & { classes: StyleClassNames }
 
 const TopBar: SFC<AllProps> = ({ classes, title }) => (
-    <AppBar position="absolute" className={classes.appBar}>
-      <Toolbar>
-        <Typography variant="title" color="inherit" noWrap={true}>
-          {title}
-        </Typography>
-      </Toolbar>
-    </AppBar>
+  <AppBar position="absolute" className={classes.appBar}>
+    <Toolbar>
+      <Typography variant="title" color="inherit" noWrap={true}>
+        {title}
+      </Typography>
+    </Toolbar>
+  </AppBar>
 )
 
 type StyleClassNames = {

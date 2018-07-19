@@ -1,7 +1,6 @@
 import * as React from "react"
 import { SFC } from "react"
-import { withStyles } from "material-ui/styles"
-import { StyleRulesCallback } from "material-ui"
+import { StyleRulesCallback, withStyles } from "@material-ui/core"
 
 type Props = {
   drizzleStatus: any

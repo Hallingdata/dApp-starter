@@ -1,9 +1,6 @@
 import * as React from "react"
 import { SFC } from "react"
-import { withStyles } from "material-ui/styles"
-import Drawer from "material-ui/Drawer"
-import List from "material-ui/List"
-import { StyleRulesCallback } from "material-ui"
+import { Drawer, List, StyleRulesCallback, withStyles } from "@material-ui/core"
 import MenuItems from "./MenuItems"
 import TopBar from "./TopBar"
 
@@ -12,9 +9,9 @@ type AllProps = Props & { classes: StyleClassNames }
 
 const drawerWidth = 240
 
-const Layout: SFC<AllProps> = ({ classes, children}) => (
+const Layout: SFC<AllProps> = ({ classes, children }) => (
   <div className={classes.root}>
-  <TopBar title="MiningToken"/>
+    <TopBar title="MiningToken" />
     <Drawer
       variant="permanent"
       classes={{
