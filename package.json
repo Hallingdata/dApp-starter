@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/react-redux": "^5.0.15",
     "drizzle": "^1.0.1",
     "drizzle-react": "^1.0.1",
     "material-ui": "^1.0.0-beta.38",
@@ -22,14 +21,15 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "tru-test": "truffle test",
-    "tru-mig": "truffle migrate",
-    "tru-comp": "truffle compile"
+    "eth-test": "truffle test",
+    "eth-mig": "truffle migrate",
+    "eth-comp": "truffle compile"
   },
   "devDependencies": {
     "@types/jest": "^22.2.0",
     "@types/node": "^9.4.7",
     "@types/react": "^16.0.40",
+    "@types/react-redux": "^5.0.15",
     "@types/react-dom": "^16.0.4",
     "@types/react-router": "^4.0.23",
     "@types/react-router-redux": "^5.0.12",
