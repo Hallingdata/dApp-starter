@@ -1,8 +1,8 @@
 import * as React from "react"
 import { DrizzleProvider } from "drizzle-react"
 
-import LoadingContainer from "./containers/LoadingContainer"
-import DrizzleStatusContainer from "./containers/DrizzleStatusContainer"
+import { LoadingContainer } from "drizzle-react-components"
+import ContractInteractionContainer from "./containers/ContractInteractionContainer"
 
 import store from "./store"
 import Layout from "./components/Layout"
@@ -16,9 +16,9 @@ class App extends React.Component {
           <Layout>
             <div>
               <header>
-                <h1>GustavoCoin</h1>
+                <h1>Demo</h1>
               </header>
-              <DrizzleStatusContainer />
+              <ContractInteractionContainer />
             </div>
           </Layout>
         </LoadingContainer>

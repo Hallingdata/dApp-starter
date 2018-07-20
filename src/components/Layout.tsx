@@ -1,26 +1,14 @@
 import * as React from "react"
 import { SFC } from "react"
-import { Drawer, List, StyleRulesCallback, withStyles } from "@material-ui/core"
-import MenuItems from "./MenuItems"
+import { StyleRulesCallback, withStyles } from "@material-ui/core"
 import TopBar from "./TopBar"
 
 type Props = { children: any }
 type AllProps = Props & { classes: StyleClassNames }
 
-const drawerWidth = 240
-
 const Layout: SFC<AllProps> = ({ classes, children }) => (
   <div className={classes.root}>
-    <TopBar title="GustavoCoin" />
-    <Drawer
-      variant="permanent"
-      classes={{
-        paper: classes.drawerPaper,
-      }}
-    >
-      <div className={classes.toolbar} />
-      <List>{MenuItems}</List>
-    </Drawer>
+    <TopBar title="dApp starter" />
     <main className={classes.content}>{children}</main>
   </div>
 )
@@ -40,10 +28,6 @@ const styles: StyleRulesCallback = theme => ({
     overflow: "hidden",
     position: "relative",
     display: "flex",
-  },
-  drawerPaper: {
-    position: "relative",
-    width: drawerWidth,
   },
   content: {
     flexGrow: 1,
