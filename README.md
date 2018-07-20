@@ -12,7 +12,7 @@ $ npm run eth-start
 
 ## Run web app
 ```
-$ npm start
+$ npm app-start
 ```
 
 ### Included
