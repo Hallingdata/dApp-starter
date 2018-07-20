@@ -49,4 +49,4 @@ ContractInteraction.contextTypes = {
   drizzle: PropTypes.object,
 }
 
-export default withStyles(styles)<any>(ContractInteraction)
+export default withStyles(styles)<Props>(ContractInteraction)

@@ -2,7 +2,7 @@ import * as React from "react"
 import { DrizzleProvider } from "drizzle-react"
 
 import { LoadingContainer } from "drizzle-react-components"
-import ContractInteractionContainer from "./containers/ContractInteractionContainer"
+import ContractInteraction from "./components/ContractInteraction"
 
 import store from "./store"
 import Layout from "./components/Layout"
@@ -18,7 +18,7 @@ class App extends React.Component {
               <header>
                 <h1>Demo</h1>
               </header>
-              <ContractInteractionContainer />
+              <ContractInteraction />
             </div>
           </Layout>
         </LoadingContainer>
