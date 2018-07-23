@@ -1,0 +1,18 @@
+{
+  "ignore": [
+    "README.md",
+    ".gitignore"
+  ],
+  "commands": {
+    "Start Genache, compile contracts and migrate contracts": "npm run eth-start",
+    "Start front-end app": "npm run app-start",
+
+    "Compile and Migrate contracts": "npm run eth-deploy",
+
+    "Compile contracts": "npm run eth-compile",
+    "Migrate contracts": "npm run eth-migrate"
+  },
+  "hooks": {
+    "post-unpack": "npm install"
+  }
+}
