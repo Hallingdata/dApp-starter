@@ -1,4 +1,9 @@
-# dApp starter
+# dApp starter / Truffle Box
+
+## Setup as Truffle Box
+```
+$ truffle unbox hallingdata/dApp-starter
+```
 
 ## Setup
 ```
