@@ -15,15 +15,12 @@ const Layout: SFC<AllProps> = ({ classes, children }) => (
 
 type StyleClassNames = {
   root: string
-  drawerPaper: string
   content: string
-  toolbar: string
 }
 
 const styles: StyleRulesCallback = theme => ({
   root: {
     flexGrow: 1,
-    height: 430,
     zIndex: 1,
     overflow: "hidden",
     position: "relative",
@@ -36,7 +33,6 @@ const styles: StyleRulesCallback = theme => ({
     minWidth: 0, // So the Typography noWrap works
     paddingTop: 64,
   },
-  toolbar: theme.mixins.toolbar,
 })
 
 export default withStyles(styles)<Props>(Layout)

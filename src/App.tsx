@@ -3,7 +3,7 @@ import { SFC } from "react"
 
 import { DrizzleProvider } from "drizzle-react"
 import { LoadingContainer } from "drizzle-react-components"
-import ContractInteraction from "./components/ContractInteraction"
+import ContractInteractionDemo from "./containers/ContractInteractionDemo"
 import store from "./store"
 import Layout from "./components/Layout"
 import drizzleOptions from "./drizzleOptions"
@@ -15,7 +15,7 @@ const App: SFC = () => (
         <header>
           <h1>Demo</h1>
         </header>
-        <ContractInteraction />
+        <ContractInteractionDemo />
       </Layout>
     </LoadingContainer>
   </DrizzleProvider>
