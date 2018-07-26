@@ -23,6 +23,7 @@
   "scripts": {
     "app-start": "react-scripts-ts start",
     "app-build": "react-scripts-ts build",
+    "app-serve-build": "./node_modules/.bin/serve -s build",
     "app-test": "react-scripts-ts test --env=jsdom",
     "eth-start": "npm run eth-start-xtrerm:genache && sleep 10s && npm run eth-deploy",
     "eth-start:genache": "./node_modules/.bin/ganache-cli -d --gasLimit 7000000000000 --acctKeys ./ganache-accounts.json",
@@ -42,6 +43,7 @@
     "@types/react-router-redux": "^5.0.15",
     "@types/web3": "^1.0.1",
     "ganache-cli": "^6.1.6",
+    "serve": "^9.4.0",
     "truffle": "^4.1.13",
     "typescript": "^2.9.1",
     "zeppelin-solidity": "^1.10.0"
