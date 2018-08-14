@@ -1,8 +1,8 @@
 pragma solidity ^0.4.19;
 
 import "./GustavoCoin.sol";
-import "../node_modules/zeppelin-solidity/contracts/crowdsale/emission/MintedCrowdsale.sol";
-import "../node_modules/zeppelin-solidity/contracts/crowdsale/validation/TimedCrowdsale.sol";
+import "../node_modules/openzeppelin-solidity/contracts/crowdsale/emission/MintedCrowdsale.sol";
+import "../node_modules/openzeppelin-solidity/contracts/crowdsale/validation/TimedCrowdsale.sol";
 
 contract GustavoCoinCrowdsale is TimedCrowdsale, MintedCrowdsale {
   function GustavoCoinCrowdsale
