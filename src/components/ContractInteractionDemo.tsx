@@ -16,6 +16,7 @@ import {
 } from "@material-ui/core"
 import { ContractData, ContractForm } from "drizzle-react-components"
 import PropTypes from "prop-types"
+import SwarmDemo from "../containers/SwarmDemo"
 
 type Props = {
   simpleStorageStatus: any
@@ -70,7 +71,7 @@ const ContractInteraction: SFC<AllProps> = (
             />
           </CardContent>
           <CardActions>
-            <Button size="small" onClick={resetSimpleStorage}>
+            <Button size="small" onClick={resetSimpleStorage} variant="raised">
               Set storage to 0
             </Button>
           </CardActions>
@@ -103,7 +104,7 @@ const ContractInteraction: SFC<AllProps> = (
               Data:
             </Typography>
             <CardActions>
-              <Button size="small" onClick={addDateToDataArray}>
+              <Button size="small" onClick={addDateToDataArray} variant="raised">
                 Add date
               </Button>
             </CardActions>
@@ -117,6 +118,7 @@ const ContractInteraction: SFC<AllProps> = (
           </CardContent>
         </Card>
       </Grid>
+      <SwarmDemo />
       <Typography>Active account: {account}</Typography>
     </Grid>
   )
@@ -152,4 +154,4 @@ ContractInteraction.contextTypes = {
   drizzle: PropTypes.object,
 }
 
-export default withStyles(styles)<any>(ContractInteraction)
+export default withStyles(styles)<Props>(ContractInteraction)
